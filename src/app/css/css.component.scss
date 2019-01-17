@@ -1,0 +1,42 @@
+.highlight {
+    background-color: #f8f8f8;
+}
+.css_generator{
+    width: 50%;
+    margin: 0 auto;
+    .row{
+        padding:10px;
+    }
+}
+pre {
+    margin-bottom: 1.5em;
+    margin-top: .75em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    margin-bottom: .75em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: -1em;
+    padding: 1em;
+    margin: auto 0 22px;
+}
+.preview{
+    
+    .header_pre{
+        border:1px solid #e8e8e8;
+        height: 50px;
+    }
+    .background_pre{
+        border:1px solid #e8e8e8;
+        height: 200px;
+    }
+    .sidebar_pre{
+        border:1px solid #e8e8e8;
+        height: 200px;
+    }
+    .footer_pre{
+        border:1px solid #e8e8e8;
+        height: 50px;
+    }
+}

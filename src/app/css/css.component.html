@@ -1,0 +1,96 @@
+
+<div class="container">
+    <div class="css_generator">
+      <div class="row">
+        <div class="col-md-2">
+            <label>Header</label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control"   [cpPosition]="'bottom'" [(colorPicker)]="header" [style.background]="header"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <label>Footer</label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control"   [cpPosition]="'bottom'" [(colorPicker)]="footer" [style.background]="footer"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <label>Sidebar</label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control"   [cpPosition]="'bottom'" [(colorPicker)]="sidebar" [style.background]="sidebar"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <label>Background</label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control"   [cpPosition]="'bottom'" [(colorPicker)]="background" [style.background]="background"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <label>Button</label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control"   [cpPosition]="'bottom'" [(colorPicker)]="btn" [style.background]="btn"/>
+        </div>
+      </div>
+  
+      <!-- <button class="btn btn-info" (click)="generate()">Generate !!!</button> -->
+      
+    </div>
+  
+    <div class="css_result">
+  
+        <pre style="padding-bottom: -1em" class="highlight scss">
+          <code>
+            $header: {{header}};
+            $footer: {{footer}};
+            $sidebar: {{sidebar}};
+            $background: {{background}};
+            $btn: {{btn}};
+          </code>
+        </pre>
+  
+    </div>
+  
+    <div class="preview">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="header_pre" [ngStyle]="{background:header}"></div>
+            <div class="row">
+              <div class="col-sm-3">
+                  <div class="sidebar_pre" [ngStyle]="{background:sidebar}"></div>
+              </div>
+              <div class="col-sm-9">
+                  <div class="background_pre" [ngStyle]="{background:background}">
+                    <button class="btn" [ngStyle]="{background:btn}">button</button>
+                  </div>
+              </div>
+            </div>
+            <div class="footer_pre" [ngStyle]="{background:footer}"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="header_pre header_res"></div>
+            <div class="row">
+              <div class="col-sm-3">
+                  <div class="sidebar_pre sidebar_res"></div>
+              </div>
+              <div class="col-sm-9">
+                  <div class="background_pre background_res">
+                    <button class="btn btn_res">button</button>
+                  </div>
+              </div>
+            </div>
+            <div class="footer_pre footer_res"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
